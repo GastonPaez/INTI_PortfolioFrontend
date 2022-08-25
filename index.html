@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Gaston Paez</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,21 +46,22 @@
         </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col">        
-          <h1>Gaston Paez</h1>
-          <h1>Hola, soy Gaston, soy desarrollador web Full-Stack</h1>
+    <section class="profile bg-white">
+      <div class="container pt-5 pb-5">
+          <div class="row">
+            <div class="col">        
+              <h1>Gaston Paez</h1>
+              <h3>Hola, soy Gaston, soy desarrollador web Full-Stack</h1>
+            </div>
+            <div class="col">
+              <img src="./img/profile.png" alt="">
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="./img/profile.png" alt="">
-        </div>
-      </div>
-    </div>
-
-    <section class="hardskills mt-5">
+     </section>  
+    <section class="hardskills mt-5 bg-dark pt-5 pb-5">
       <div class="container text-center">
-        
+        <p class="h1 text-warning pt-3 pb-5">Habilidades</p>
         <div class="card-group">     
 
           <div class="card">
@@ -84,20 +85,32 @@
             </div>
           </div>
 
-                  
-
-                
           <div class="card">
             <img class="card-img-top" src="./img/hardSkills/typescript.png" alt="">
             <div class="card-body">
               <h5 class="card-title">TypeScript</h5>              
             </div>
           </div> 
+
+          <div class="card">
+            <img class="card-img-top" src="./img/hardSkills/angular.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Angular</h5>              
+            </div>
+          </div> 
+
         </div>  
 
         
 
         <div class="card-group mt-5">     
+          
+          <div class="card">
+            <img class="card-img-top" src="./img/hardSkills/java.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Java</h5>              
+            </div>
+          </div>     
 
           <div class="card">
             <img class="card-img-top" src="./img/hardSkills/python.png" alt="python">
@@ -107,11 +120,12 @@
           </div> 
 
           <div class="card">
-            <img class="card-img-top" src="./img/hardSkills/java.png" alt="">
+            <img class="card-img-top" src="./img/hardSkills/django.png" alt="python">
             <div class="card-body">
-              <h5 class="card-title">Java</h5>              
+              <h5 class="card-title">Django</h5>              
             </div>
-          </div>     
+          </div> 
+
           
           <div class="card">
             <img class="card-img-top" src="./img/hardSkills/mysql.png" alt="mysql">
@@ -125,12 +139,99 @@
             <div class="card-body">
               <h5 class="card-title">Git</h5>              
             </div>
-          </div>   
-
+          </div> 
           
-
         </div>
       </div>    
+    </section>
+
+    <section class="cursos pt-5 pb-5">
+      <div class="col">
+        <p class="h1 text-center">Cursos y Formaciones</p>
+
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Educacion Formal</h5>              
+            </div>            
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Instituto Inmaculada Concepción de Burzaco</h5>
+              <small class="text-muted">| 1996 - 2008 |</small>
+            </div>
+            <p class="mb-1"> Primaria y Secundaria (Economía)</p>
+            
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">UNLA – Licenciatura en Informática</h5>
+              <small class="text-muted">|2022 - En curso |</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">ISPC - Tecnicatura en Desarrollo Web y Apps Digitales</h5>
+              <small class="text-muted">|2022 - En curso |</small>
+            </div>
+            <ul>
+              <li>Diseñar, construir, programar e implementar aplicaciones para la Web con criterios de calidad y seguridad;</li>
+              <li>Integrar las técnicas de trabajo, la información, la producción de códigos y reutilización de códigos existentes;</li>
+              <li>Desarrollar sitios web dinámicos con interacción con base de datos en servidores, y consumir servicios;</li>
+              <li>Producir documentación técnica de los procesos y productos desarrollados de acuerdo con los requerimientos funcionales y técnicos recibidos;</li>
+              <li>Planificar el proyecto en un contexto de desarrollo en equipo</li>
+              <li>Desarrollar aplicaciones móviles multiplataforma.</li>
+            </ul>
+            <p class="mb-1"></p>
+            <small class="text-muted">| Programador | Desarrollador Full Stack | Programador de disposiivos Móviles</small>
+          </a>
+        </div>
+
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Capacitaciones</h5>              
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Diplomatura Python – Universidad Tecnológica 
+                Nacional</h5>
+              <small class="text-muted">2021</small>
+            </div>
+            <ul>
+              <li>Programación estructurada, orientada a objetos, patron MVC y MTV</li>
+              <li>Uso de GUI interfaz grafica, formato de archivo y base de datos</li>
+              <li>Programación Orientada a Objetos, BBDD, uso de ORM, excepciones y documentación</li>
+              <li>Manipulació de atributos, decoradores y metaclases</li>
+              <li>Patron de desarrollo, sockets y asyncio </li>              
+            </ul>                        
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Carrera Python (Avanzado) – Educación IT (Django)</h5>
+              <small class="text-muted">2021</small>
+            </div>
+            <ul>            
+            <li class="mb-1">Desarrollo web Python & Django</li>
+            <li class="mb-1">Fundamentos SCRUM</li>
+          </ul>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Argentina Programa – INTI</h5>
+              <small class="text-muted">2022</small>
+            </div>
+            <p class="mb-1">Desarrollo Full Stack</p>
+            <ul>            
+            <li class="mb-1">HTML CSS Bootstrap JavaScript TypeScript</li>
+            <li class="mb-1">JAVA</li>
+            <li class="mb-1">ANGULAR</li>
+          </ul>
+          </a>
+        </div>
+
+      </div>
     </section>
 
     
