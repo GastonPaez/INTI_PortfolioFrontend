@@ -3,3 +3,8 @@ body{
     text-align: center;
     color: #fff;
 }
+
+.margined {
+    margin-left: 100px;
+    margin-right: 100px;
+}
