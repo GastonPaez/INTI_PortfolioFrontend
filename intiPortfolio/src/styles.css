@@ -9,3 +9,9 @@ body{
     margin-left: 100px;
     margin-right: 100px;
 }
+
+.test {
+    background: red;
+    width: 100%;
+    height: 200px;
+}

@@ -1,26 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { ProfileComponent } from './profile/profile.component';
-
 import { DevExperienceComponent } from './dev-experience/dev-experience.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     NavbarComponent,
+    AboutComponent,
     SkillsComponent,
     EducationComponent,
+    DevExperienceComponent,
     WorkExperienceComponent,
-    ProfileComponent,
-    DevExperienceComponent
+    ContactComponent,
+    FooterComponent
+    
   ],
   imports: [
     BrowserModule
@@ -28,13 +29,15 @@ import { DevExperienceComponent } from './dev-experience/dev-experience.componen
   providers: [],
   bootstrap: [
     AppComponent,
-    FooterComponent,
     NavbarComponent,
+    AboutComponent,
     SkillsComponent,
     EducationComponent,
+    DevExperienceComponent,
     WorkExperienceComponent,
-    ProfileComponent,
-    DevExperienceComponent
+    ContactComponent,
+    FooterComponent
+    
 ]
 })
 export class AppModule { }
