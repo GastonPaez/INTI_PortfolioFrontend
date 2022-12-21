@@ -9,6 +9,7 @@ import { EducationComponent } from './education/education.component';
 import { DevExperienceComponent } from './dev-experience/dev-experience.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [

@@ -7,11 +7,5 @@ import { PortfolioService } from '../services/portfolio.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  constructor(private datosPortfolio:PortfolioService){}
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data)
-    });
-  }
-
+  
 }
