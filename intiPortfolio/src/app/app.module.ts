@@ -10,6 +10,8 @@ import { DevExperienceComponent } from './dev-experience/dev-experience.componen
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -21,12 +23,12 @@ import { HttpClientModule } from '@angular/common/http';
     DevExperienceComponent,
     WorkExperienceComponent,
     ContactComponent,
-    FooterComponent
-    
+    FooterComponent    
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [
