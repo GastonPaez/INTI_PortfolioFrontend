@@ -11,6 +11,9 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -23,12 +26,15 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     DevExperienceComponent,
     WorkExperienceComponent,
     ContactComponent,
-    FooterComponent    
+    FooterComponent,
+    HomeComponent,
+    LoginComponent    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [
@@ -40,7 +46,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     DevExperienceComponent,
     WorkExperienceComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
     
 ]
 })
