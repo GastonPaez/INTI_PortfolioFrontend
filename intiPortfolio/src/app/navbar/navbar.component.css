@@ -1,0 +1,25 @@
+nav {
+    background: #000000 ;       
+}
+a {
+    color: #fff !important;
+}
+.margined{
+    display: flex;
+    justify-content: space-around;
+
+}
+.btn-link {
+    background: -webkit-linear-gradient(45deg,#fc2557,#747ff1);
+    text-decoration: none;
+}
+
+.marginedd {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.transparent {
+    background: -webkit-linear-gradient(45deg,#fc2557,#747ff1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
