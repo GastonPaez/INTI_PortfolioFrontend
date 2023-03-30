@@ -1,57 +1,51 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { LoginUsuario } from '../model/login-usuario';
-import { AuthService } from '../service/auth.service';
-import { TokenService } from '../service/token.service';
-
+import { AuthService } from '../_services/auth.service';
+import { StorageService } from '../_services/storage.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-
-
-export class LoginComponent implements OnInit {  
-  
-
-  isLogged = false;
-  isLogginFail = false;
-  loginUsuario! : LoginUsuario;
-  username!: string;
-  password!: string;
+export class LoginComponent implements OnInit {
+  form: any = {
+    username: null,
+    password: null
+  };
+  isLoggedIn = false;
+  isLoginFailed = false;
+  errorMessage = '';
   roles: string[] = [];
-  errMsj!: string
 
-  constructor(private tokenService:TokenService, private authService:AuthService, private router:Router) {}
-  
+  constructor(private authService: AuthService, private storageService: StorageService) { }
+
   ngOnInit(): void {
-    if(this.tokenService.getToken()){
-      this.isLogged = true;
-      this.isLogginFail = false;
-      this.roles = this.tokenService.getAuthorities();      
+    if (this.storageService.isLoggedIn()) {
+      this.isLoggedIn = true;
+      this.roles = this.storageService.getUser().roles;
     }
   }
 
-  onLogin(): void {
-    this.loginUsuario = new LoginUsuario(this.username, this.password); 
-    this.authService.login(this.loginUsuario).subscribe(
-      data =>{
-        this.isLogged = true;
-        this.isLogginFail = false;
-        this.tokenService.setToken(data.token);
-        this.tokenService.setUserName(data.username);
-        this.tokenService.setAuthorities(data.authorities);        
-        this.roles = data.authorities;
-        this.router.navigate(['']);
-      }, err =>{
-        this.isLogged = false;
-        this.isLogginFail = true;
-        this.errMsj = err.error.mensaje;
-        console.log(this.errMsj)
-      }
-    )
+  onSubmit(): void {
+    const { username, password } = this.form;
 
+    this.authService.login(username, password).subscribe({
+      next: data => {
+        this.storageService.saveUser(data);
+
+        this.isLoginFailed = false;
+        this.isLoggedIn = true;
+        this.roles = this.storageService.getUser().roles;
+        this.reloadPage();
+      },
+      error: err => {
+        this.errorMessage = err.error.message;
+        this.isLoginFailed = true;
+      }
+    });
   }
 
+  reloadPage(): void {
+    window.location.reload();
+  }
 }

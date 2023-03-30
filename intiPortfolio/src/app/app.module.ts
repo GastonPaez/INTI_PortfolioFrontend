@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { httpInterceptorProviders } from './_helpers/http.interceptor';
+
 
 
 @NgModule({
@@ -29,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent    
+    LoginComponent,
+    RegisterComponent    
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [
     AppComponent,
     NavbarComponent,
