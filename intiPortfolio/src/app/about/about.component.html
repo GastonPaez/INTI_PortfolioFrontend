@@ -1,17 +1,28 @@
-<section class="profile bg-white text-dark" id="profile">
-    <div class="container pt-5 pb-5 margined">
-        <div class="row d-flex align-items-center">
-          <div class="col">        
-            <p class="h3">{{miPortfolio.saludo}}
-              <span class="transparent">Probando Colores multiples en azul y rojo</span>
-            </p>
-            <p class="h1" id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
-            <p class="h4">{{miPortfolio.ubicacion}} </p>              
-            <p class="h3">{{miPortfolio.perfil}} </p>              
-          </div>
-          <div class="col">
-            <img src="../assets/img/profile.png" alt="Imagen perfil" class="rounded-circle" width="300px">
-          </div>
+<section class="profile text-white d-flex align-items-center justify-content-center" id="profile">
+    <div class="container ">
+        <div class="row d-flex align-items-center ">
+            <div class="col ">
+                <div class="row ">
+                    <div class="row-col transparent">
+                        <p class="h3">{{miPortfolio.saludo}} </p>
+                        <p class="h1" id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
+                        <p class="h4">{{miPortfolio.ubicacion}} </p>
+                        <p class="h3">{{miPortfolio.perfil}} </p>
+                    </div>
+                    <div class="col text-about">
+                        <pre>
+Me capacite en programacion en los stack de Back y Front-end
+Tengo conocimiento en HTML / CSS / Javascript / Angular
+Y con los frameworks de backend Django para python 
+Springboot implementando JWT para Java.
+</pre>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../assets/img/profile.png" alt="Imagen perfil" class="rounded-circle" width="400px">
+            </div>
         </div>
-      </div>
-   </section>  
+    </div>
+</section>

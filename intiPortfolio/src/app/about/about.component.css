@@ -1,0 +1,34 @@
+section {
+    height: 100vh;
+    background: #0c1014;
+}
+
+.transparent {
+    background: -webkit-linear-gradient(45deg,#fc2557,#747ff1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+p:first-child{
+    background: -webkit-linear-gradient(45deg,#fc2557,#747ff1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+p:nth-child(4){
+    background: -webkit-linear-gradient(45deg,#503dff,#9af9cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+pre {
+    font-family: 'Alkatra', cursive;
+    height: 200px;
+}
+.text-about{
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    background: none
+}

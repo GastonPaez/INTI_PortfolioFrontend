@@ -1,5 +1,5 @@
 nav {
-    background: #000000 ;       
+    background: #000000 !important ;       
 }
 a {
     color: #fff !important;
@@ -22,4 +22,8 @@ a {
     background: -webkit-linear-gradient(45deg,#fc2557,#747ff1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.navbar-toggler{
+    background-color: #fff !important;
 }

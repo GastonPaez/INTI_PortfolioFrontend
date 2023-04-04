@@ -1,7 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Alkatra', cursive;
+}
+
 body{
     /*background: url("../img/wallpaper.jpg");*/
     text-align: center;
     color: #fff;
+    
 }
 
