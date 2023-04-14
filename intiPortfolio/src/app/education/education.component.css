@@ -2,3 +2,7 @@ ul > li, p {
     text-align: left;
 }
 
+section{
+    height: 100%;
+    background: #0c1014;
+}
