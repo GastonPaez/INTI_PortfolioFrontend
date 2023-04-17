@@ -1,0 +1,28 @@
+section {
+    height: 100%;
+    background: #0c1014;
+}
+
+section > div > div > div {
+    margin-bottom: 20px;
+}
+
+.card {
+    height: 100%;     
+   
+}
+
+.card-body{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.card-body:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.card > img {
+    height: 200px;
+}
